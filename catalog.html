@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="style/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,48 +71,25 @@
     <main class="main">
         <!-- !!!Промо -->
         <section class="promo">
-            <div class="center promo__center">
-                <h1 class="promo__title">
-                    THE BRAND <br>
-                    <span class="promo__title--small">OF LUXERIOUS
-                        <span class="promo__title--pink">FASHION</span>
-                    </span>
-                </h1>
+            <div class="center promo__center promo__center--cat">
+                <h1 class="promo__title--cat">NEW ARRIVALS</h1>
+                <nav class="promo__cat--nav">
+                    <ul class="catnav__list">
+                        <li class="catnav__item"><a href="index.html" class="catnav__link">home</a></li>
+                        <li class="catnav__item"><a href="#" class="catnav__link">men</a></li>
+                        <li class="catnav__item"><a class="catnav__link cat__link--last">new arrivals</a></li>
+                    </ul>
+                </nav>
             </div>
         </section>
         <!-- !!!Промо -->
 
-        <!-- !!!Категории товаров -->
-        <section class="catalog center">
-            <h2 class="hidden__item">Каталог популярных товаров</h2>
-            <div class="catalog__item">
-                <div class="catalog__mask"></div>
-                <p class="catalog__item-offer">30% OFF</p>
-                <p class="catalog__item-name">FOR WOMEN</p>
-            </div>
-            <div class="catalog__item">
-                <div class="catalog__mask"></div>
-                <p class="catalog__item-offer">HOT DEAL</p>
-                <p class="catalog__item-name">FOR MEN</p>
-            </div>
-            <div class="catalog__item">
-                <div class="catalog__mask"></div>
-                <p class="catalog__item-offer">NEW ARRIVALS</p>
-                <p class="catalog__item-name">FOR KIDS</p>
-            </div>
-            <div class="catalog__item">
-                <div class="catalog__mask"></div>
-                <p class="catalog__item-offer">LUXIROUS & TRENDY</p>
-                <p class="catalog__item-name">ACCESORIES</p>
-            </div>
-        </section>
-        <!-- !!!Категории товаров -->
-
         <!-- !!!Каталог товаров -->
         <section class="product center">
-            <h2 class="product__title">Fetured Items</h2>
-            <p class="product__tdesc">Shop for items based on what we featured in this week</p>
-            <div class="product__main">
+            <div class="filter__box">
+                filter
+            </div>
+            <div class="product__main product__main-cat">
                 <article class="product__item">
                     <div class="product__mask">
                         <button class="product__mask-button">
@@ -131,9 +108,7 @@
                             <img src="img/add-cart.svg" alt="Add cart" class="product__mask-img">Add to Cart
                         </button>
                     </div>
-                    <!-- <img src="img/product-2.jpg" alt="Product 2" class="product__img"> -->
-                    <video width="360" height="420" src="media/preview.mp4" autoplay loop muted preload="auto"
-                        class="product__video"></video>
+                    <img src="img/product-7.jpg" alt="Product 1" class="product__img">
                     <h3 class="product__name">ELLERY X M'O CAPSULE</h3>
                     <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -145,7 +120,7 @@
                             <img src="img/add-cart.svg" alt="Add cart" class="product__mask-img">Add to Cart
                         </button>
                     </div>
-                    <img src="img/product-3.jpg" alt="Product 3" class="product__img">
+                    <img src="img/product-3.jpg" alt="Product 1" class="product__img">
                     <h3 class="product__name">ELLERY X M'O CAPSULE</h3>
                     <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -157,7 +132,7 @@
                             <img src="img/add-cart.svg" alt="Add cart" class="product__mask-img">Add to Cart
                         </button>
                     </div>
-                    <img src="img/product-4.jpg" alt="Product 4" class="product__img">
+                    <img src="img/product-4.jpg" alt="Product 1" class="product__img">
                     <h3 class="product__name">ELLERY X M'O CAPSULE</h3>
                     <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -169,7 +144,7 @@
                             <img src="img/add-cart.svg" alt="Add cart" class="product__mask-img">Add to Cart
                         </button>
                     </div>
-                    <img src="img/product-5.jpg" alt="Product 5" class="product__img">
+                    <img src="img/product-8.jpg" alt="Product 1" class="product__img">
                     <h3 class="product__name">ELLERY X M'O CAPSULE</h3>
                     <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -181,16 +156,76 @@
                             <img src="img/add-cart.svg" alt="Add cart" class="product__mask-img">Add to Cart
                         </button>
                     </div>
-                    <img src="img/product-6.jpg" alt="Product 6" class="product__img">
+                    <img src="img/product-9.jpg" alt="Product 1" class="product__img">
+                    <h3 class="product__name">ELLERY X M'O CAPSULE</h3>
+                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </article>
+                <article class="product__item">
+                    <div class="product__mask">
+                        <button class="product__mask-button">
+                            <img src="img/add-cart.svg" alt="Add cart" class="product__mask-img">Add to Cart
+                        </button>
+                    </div>
+                    <img src="img/product-10.jpg" alt="Product 1" class="product__img">
+                    <h3 class="product__name">ELLERY X M'O CAPSULE</h3>
+                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </article>
+                <article class="product__item">
+                    <div class="product__mask">
+                        <button class="product__mask-button">
+                            <img src="img/add-cart.svg" alt="Add cart" class="product__mask-img">Add to Cart
+                        </button>
+                    </div>
+                    <img src="img/product-11.jpg" alt="Product 1" class="product__img">
+                    <h3 class="product__name">ELLERY X M'O CAPSULE</h3>
+                    <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </article>
+                <article class="product__item">
+                    <div class="product__mask">
+                        <button class="product__mask-button">
+                            <img src="img/add-cart.svg" alt="Add cart" class="product__mask-img">Add to Cart
+                        </button>
+                    </div>
+                    <img src="img/product-12.jpg" alt="Product 1" class="product__img">
                     <h3 class="product__name">ELLERY X M'O CAPSULE</h3>
                     <p class="product__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="product__price">$52.00</p>
                 </article>
             </div>
-            <div class="product__all">
-                <a href="catalog.html" class="product__button">Browse All Product</a>
-            </div>
+            <nav class="product__page">
+                <ul class="page__list">
+                    <li class="page__item-button">
+                        <a href="#" class="page__button-link">
+                            <svg class="page__button-svg" width="9" height="14" viewBox="0 0 9 14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="#" class="page__item-link">1</a></li>
+                    <li><a href="#" class="page__item-link">2</a></li>
+                    <li><a href="#" class="page__item-link">3</a></li>
+                    <li><a href="#" class="page__item-link">4</a></li>
+                    <li><a href="#" class="page__item-link">5</a></li>
+                    <li><a href="#" class="page__item-link">6</a></li>
+                    <li class="page__item-last"><a href="#" class="page__item-link">20</a></li>
+                    <li class="page__item-button">
+                        <a href="#" class="page__button-link">
+                            <svg class="page__button-svg" width="9" height="14" viewBox="0 0 9 14"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </section>
         <!-- !!!Каталог товаров -->
 
