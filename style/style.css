@@ -59,6 +59,22 @@ body {
     align-items: flex-end;
     column-gap: 30px;
     list-style: none;
+    position: relative;
+}
+.header__item-cart {
+    position: absolute;
+    top: -7px;
+    right: -9px;
+    width: 19px;
+    height: 19px;
+    background-color: #F16D7F;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav__item-link {
     text-decoration: none;
