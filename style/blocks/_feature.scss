@@ -1,0 +1,28 @@
+.feature {
+    background-color: $color_grey;
+    color: $color_text-white;
+    padding: 105px 0;
+
+    &__flex {
+        @include flex(0, center, 0, wrap);
+        column-gap: 30px;
+        row-gap: 48px;
+    }
+    &__item {
+        text-align: center;
+        max-width: 360px;
+    }
+    
+}
+
+.fitem-img {
+    height: 40px;
+}
+.fitem-h3 {
+    @include set_fonts(0, 19px, 24px, #FBFBFB);
+    padding-top: 19px;
+}
+.fitem-text {
+    @include set_fonts(300, 14px, 17px, #FBFBFB);
+    padding-top: 16px;
+}

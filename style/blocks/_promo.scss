@@ -1,0 +1,63 @@
+.promo {
+    background-color: #F1E4E6;
+
+    &__center {
+        height: 764px;
+        background-image: url("../img/promo-bg.png");
+        background-repeat: no-repeat;
+        background-position-x: -225px;
+        @include flex(0, flex-end, flex-start);
+    }
+    &__title {
+        @include set_fonts(900, 48px, 40px, $color_text-grey);
+        border-left: 12px solid $color_pink;
+        padding-left: 16px;
+        margin-right: 100px;
+        margin-top: 290px;
+    }
+    &__title--small {
+        @include set_fonts(bold, 32px, 38px, 0);
+    }
+    &__title--pink {
+        color: $color_pink;
+    }
+    /* !!! --catalog.html */
+    &__center--cat {
+        height: 100%; /* ??? */
+        padding: 60px 0;
+        background-image: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title--cat {
+        @include set_fonts(normal, 24px, 29px, $color_pink);
+    }
+
+}
+
+/* !!! --catalog.html */
+.catnav__list {
+    list-style: none;
+    display: flex;
+    column-gap: 6px;
+}
+.catnav__item::before {
+    content: "/";
+    margin-right: 6px;
+    color: #636363;
+}
+.catnav__item:first-child::before {
+    display: none;
+}
+.catnav__link { 
+    @include set_fonts(300, 14px, 17px, #636363);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.catnav__link--last {
+    @include set_fonts(bold, 0, 0, $color_pink);
+}
+.catnav__link[href]:hover {
+    text-decoration: underline;
+    color: $color_pink;
+}

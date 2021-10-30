@@ -1,0 +1,51 @@
+.catalog {
+    background-color: $color_block-white;
+    padding-top: 65px;
+    padding-bottom: 96px;
+    @include flex(0, center, 0, wrap);
+    gap: 30px;
+
+    &__item {
+        background: #C4C4C4;
+        width: 360px;
+        height: 260px;
+        text-align: center;
+        @include flex(column, center);
+        position: relative;
+    }
+    &__mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(33, 22, 22, 0.7);
+    }
+    &__item-offer {
+        @include set_fonts(0, 16px, 19px, $color_text-white, center);
+        z-index: 1;
+    }
+    &__item-name {
+        @include set_fonts(bold, 24px, 29px, $color_pink, center);
+        padding-top: 6px;
+        z-index: 1;
+    }
+    &__item:last-child {
+        width: 100%;
+        height: 180px;
+        background-image: url("../img/cat-4.jpg");
+        background-repeat: no-repeat; /* Линия в конце появляется */
+        background-position: center; /* Линия в конце появляется */
+    }
+    &__item:nth-child(1) {
+        background-image: url("../img/cat-1.jpg");
+    }
+    &__item:nth-child(2) {
+        background-image: url("../img/cat-2.jpg");
+    }
+    &__item:nth-child(3) {
+        background-image: url("../img/cat-3.jpg");
+    }
+    
+}
+

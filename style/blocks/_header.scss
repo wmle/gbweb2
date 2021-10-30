@@ -1,0 +1,52 @@
+.header {
+    background-color: #222222;
+    color: #fff;
+
+    &__center {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 18px;
+        margin-bottom: 19px;
+    }
+    &__logo-link {
+        margin-right: 41px;
+        text-decoration: none;
+    }
+    &__item-button {
+        background: none;
+        border: none;
+    }
+    &__item-svg {
+        fill: #E8E8E8;
+    }
+    &__item-cart {
+        position: absolute;
+        top: -7px;
+        right: -9px;
+        width: 19px;
+        height: 19px;
+        background-color: $color_pink;
+        @include set_fonts(0, 12px, 14px, $color_text-white);
+        border-radius: 50%;
+        @include flex(0, center, center);
+    }
+    &__item-button:hover &__item-svg {
+        fill: $color_pink;
+        cursor: pointer;
+    }
+}
+
+.nav__list {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 30px;
+    list-style: none;
+    position: relative;
+}
+.nav__item-link {
+    text-decoration: none;
+}
+.nav__item-link:hover .header__item-svg {
+    fill: $color_pink;
+}

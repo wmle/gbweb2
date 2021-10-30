@@ -1,0 +1,31 @@
+.footer {
+    background-color: $color_text-grey;
+    color: $color_text-black;
+
+    &__center {
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copy {
+        @include set_fonts(0, 16px, 19px, #FBFBFB);
+    }
+    &__social {
+        display: flex;
+        gap: 7px;
+    }
+}
+
+.social__link {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    @include set_fonts(0, 16px, 0, $color_text-black);
+    text-decoration: none;
+    @include flex(0, center, center);
+}
+.social__link:hover {
+    background-color: $color_pink;
+    color: $color_text-white;
+}

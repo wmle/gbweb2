@@ -1,0 +1,67 @@
+.feedback {
+    background-image: url("../img/subscribe-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 97px;
+    padding-bottom: 155px;
+    position: relative;
+
+    &__mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(244, 244, 244, 0.7);
+    }
+    &__center {
+        @include flex(0, space-between, flex-end, wrap);
+    }
+    &__review {
+        width: 360px;
+        text-align: center;
+        z-index: 1;
+    }
+    &__form {
+        padding-right: 100px;
+        z-index: 1;
+    }
+}
+
+.review__img {
+    margin-bottom: 30px;
+}
+.review__blockquote {
+    @include set_fonts(0, 20px, 24px, $color_text-grey, center);
+}
+
+.form {
+    &__title {
+        @include set_fonts(normal, 18px, 168%, $color_text-grey, center);
+    }
+    &__title--bold {
+        @include set_fonts(bold, 24px, 0, 0);
+    }
+    &__block {
+        @include flex(0, center);
+        margin-top: 32px;
+    }
+    &__email {
+        padding: 19px 20px;
+        @include set_fonts(0, 14px, 17px, $color_text-grey);
+        opacity: 0.67;
+        background-color: #E1E1E1;
+        border: none;
+        border-radius: 25px 0 0 25px;
+        width: 255px;
+    }
+    &__button {
+        padding: 19px 20px;
+        @include set_fonts(0, 14px, 17px, $color_text-white);
+        background-color: #E05C6E;
+        border: none;
+        border-radius: 0 25px 25px 0;
+        cursor: pointer;
+    }
+}

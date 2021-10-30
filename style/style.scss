@@ -1,0 +1,93 @@
+$width_content : 1140px;
+$global_fonts : 'Lato', sans-serif;
+
+$color_pink : #F16D7F; //Розовый цвет
+$color_grey : #222; //Общий серый цвет
+$color_block-white : #FFF;
+$color_block-black : #000;
+
+$color_pt-desc : #9F9F9F; //block product
+$color_pt-desc-2 : #5D5D5D; //block product
+$color_pt-list : #C4C4C4; //block product
+
+$color_text-white : #FFF;
+$color_text-black : #000; 
+$color_text-grey : #222; 
+
+
+@mixin set_fonts ($weight : 0, $size : 0, $height : 0, $color : #FFF, $align : 0) {
+    @if $weight != 0 { font-weight : $weight; }
+    @if $size != 0 { font-size: $size; }
+    @if $height != 0 { line-height: $height; }
+    @if $color != 0 { color: $color; }
+    @if $align != 0 { text-align: $align; }
+}
+
+@mixin flex ($direction : 0, $content : 0, $align : 0, $wrap : 0) {
+    display: flex;
+    @if $direction != 0 { flex-direction : $direction; }
+    @if $content != 0 { justify-content : $content; }
+    @if $align != 0 { align-items : $align; }
+    @if $wrap != 0 { flex-wrap : $wrap; }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: $global_fonts;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.center {
+    max-width: $width_content;
+    margin: 0 auto;
+}
+.main {
+    flex-grow: 1;
+}
+.hidden__item {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+
+/* !!! Шапка */
+@import "blocks/_header.scss";
+/* !!! Шапка */
+
+/* !!! Промо */
+@import "blocks/_promo.scss";
+/* !!! Промо */
+
+/* !!!Категории товаров */
+@import "blocks/_categories.scss";
+/* !!!Категории товаров */
+
+/* !!!Каталог товаров */
+@import "blocks/_catalog.scss";
+/* !!!Каталог товаров */
+
+/* !!! Преимущества */
+@import "blocks/_feature.scss";
+/* !!! Преимущества */
+
+/* !!!Обратная связь и отзыв */
+@import "blocks/_feedback.scss";
+/* !!!Обратная связь и отзыв */
+
+/* !!!Foter */
+@import "blocks/_footer.scss";
+/* !!!Foter */

@@ -1,0 +1,145 @@
+.product {
+    background-color: #FFF;
+    margin-bottom: 95px;
+
+    &__title {
+        @include set_fonts(0, 30px, 36px, $color_grey, center);
+    }
+
+    &__tdesc {
+        @include set_fonts(0, 14px, 17px, $color_pt-desc, center);
+        padding-top: 6px;
+    }
+
+    &__main {
+        margin-top: 48px;
+        margin-bottom: 48px;
+        @include flex(0, center, 0, wrap);
+        gap: 30px;
+    }
+
+    &__item {
+        width: 360px;
+        position: relative;
+        background-color: #F8F8F8;
+        padding-bottom: 20px;
+    }
+
+    &__mask {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 420px;
+        background: rgba(58, 56, 56, 0.86);
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        &-button {
+            padding: 14px 16px;
+            @include set_fonts(0, 14px, 17px, $color_text-white);
+            background: none;
+            border: 1px solid #FFF;
+            display: flex;
+            align-items: center;
+        }
+        &-button:hover {
+            cursor: pointer;
+        }
+        &-img {
+            margin-right: 11px;
+        }
+    }
+
+    &__item:hover &__mask {
+        display: flex;
+    }
+    &__name {
+        @include set_fonts(0, 13px, 16px, $color_text-black);
+        margin-top: 24px;
+        padding-left: 18px;
+    }
+    &__desc {
+        @include set_fonts(300, 14px, 17px, $color_pt-desc-2);
+        margin-top: 13px;
+        padding-left: 16px;
+    }
+    &__price {
+        @include set_fonts(0, 16px, 19px, $color_pink);
+        margin-top: 18px;
+        padding-left: 19px;
+    }
+    &__all {
+        text-align: center;
+    }
+    &__button {
+        border: 1px solid #FF6A6A;
+        padding: 15px 39px;
+        @include set_fonts(0, 16px, 19px, #F26376);
+        background-color: $color_block-white;
+        text-decoration: none;
+        display: inline-block;
+    }
+    &__button:hover {
+        background-color: #F26376;
+        color: $color_text-white;
+    }
+    &__video {
+        object-fit: cover;
+        /* object-position: top; */
+    }
+}
+
+/* !!!-- catalog.html */
+.filter__box {
+    margin-top: 51px;
+}
+
+
+.product {
+    &__main-cat {
+        margin-top: 64px;
+    }
+    &__page {
+        margin-top: 48px;
+    }
+    &__page {
+        @include flex(0, center);
+    }
+}
+
+.page {
+    &__list {
+        padding: 15px;
+        list-style: none;
+        display: flex;
+        border: 1px solid #EBEBEB;
+        border-radius: 3px;
+        column-gap: 15px;
+        background-color: $color_block-white;
+    }
+    &__item-link {
+        @include set_fonts(300, 16px, 19px, $color_pt-list);
+        text-decoration: none;
+    }
+    &__item-link:hover {
+        color: #EF5B70;
+    }
+    &__item-last::before {
+        content: ".....";
+        margin-left: -15px;
+        @include set_fonts(300, 16px, 0, $color_pt-list);
+    }
+    &__item-button {
+        padding-top: 3px;
+    }
+    &__button-link[href]:hover &__button-svg {
+        fill: $color_pink;
+    }
+    &__button-svg {
+        fill: $color_block-black;
+    }
+}
+/* !!!-- catalog.html */
