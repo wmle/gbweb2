@@ -1,0 +1,67 @@
+.viewproduct {
+    background-color: $color_block-white;
+    border: 1px solid $slide_border;
+    margin-top: -$pad_height;
+    @include flex(column, 0, center);
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+    &__p {
+        @include set_fonts(300, 14px, 17px, #F16D7F);
+        margin-bottom: 12px;
+    }
+
+    &__hr {
+        background-color: #EF5B70;
+        border: 1px solid #EF5B70;
+        width: 63px;
+        height: 3px;
+        margin-bottom: 12px;
+    }
+    &__h2 {
+        @include set_fonts(300, 18px, 22px, #4D4D4D);
+        margin-bottom: 48px;
+    }
+    &__desc {
+        width: 555px;
+        @include set_fonts(300, 14px, 17px, #5E5E5E, center);
+        margin-bottom: 32px;
+    }
+    &__price {
+        @include set_fonts(300, 24px, 29px, #EF5B70);
+        margin-bottom: 65px;
+    }
+    &__hr2 {
+        width: 642px;
+        height: 1px;
+        background-color: #EAEAEA;
+        border: none;
+        margin-bottom: 65px;
+    }
+    &__choice {
+        margin-bottom: 48px;
+    }
+    &__button {
+        padding: 15px 57px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 23px;
+        @include set_fonts(normal, 16px, 19px, #F26376);
+        border: 1px solid #FF6A6A;
+        background-color: #FFF;
+
+        &:hover {
+            color: #FFF;
+            background-color: #F26376;
+            cursor: pointer;
+        }
+        &:hover  &-img {
+            fill: #FFF;
+        }
+    }
+    &__button-img {
+        margin-left: -33px;
+        fill: #F26376;
+    }
+}

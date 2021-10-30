@@ -2,6 +2,11 @@
     background-color: #FFF;
     margin-bottom: 95px;
 
+    &__pmargin {
+        margin-bottom: 128px;
+        margin-top: 128px;
+    }
+
     &__title {
         @include set_fonts(0, 30px, 36px, $color_grey, center);
     }
@@ -104,8 +109,6 @@
     }
     &__page {
         margin-top: 48px;
-    }
-    &__page {
         @include flex(0, center);
     }
 }

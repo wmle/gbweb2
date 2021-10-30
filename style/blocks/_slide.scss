@@ -1,0 +1,25 @@
+.slide {
+    height: $slide_height;
+    background-color: $slide_bg;
+    @include flex(0, space-between, center);
+    border-bottom: 1px solid $slide_border;
+    padding-bottom: $pad_height;
+
+    &__button {
+        width: 47px;
+        height: 47px;
+        background: rgba(42, 42, 42, 0.15);
+        @include flex(0, center, center);
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+            .slide__butto-svg {
+                fill: $color_pink;
+            }
+        }
+    }
+    &__foto {
+        height: $slide_height - $pad_height;
+    }
+}

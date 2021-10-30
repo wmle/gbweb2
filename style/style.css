@@ -124,7 +124,6 @@ body {
   fill: #F16D7F;
 }
 
-/* !!! Шапка */
 /* !!! Промо */
 .promo {
   background-color: #F1E4E6;
@@ -227,7 +226,6 @@ body {
   color: #F16D7F;
 }
 
-/* !!! Промо */
 /* !!!Категории товаров */
 .catalog {
   background-color: #FFF;
@@ -311,11 +309,15 @@ body {
   background-image: url("../img/cat-3.jpg");
 }
 
-/* !!!Категории товаров */
 /* !!!Каталог товаров */
 .product {
   background-color: #FFF;
   margin-bottom: 95px;
+}
+
+.product__pmargin {
+  margin-bottom: 128px;
+  margin-top: 128px;
 }
 
 .product__title {
@@ -462,9 +464,6 @@ body {
 
 .product__page {
   margin-top: 48px;
-}
-
-.product__page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,7 +518,6 @@ body {
 }
 
 /* !!!-- catalog.html */
-/* !!!Каталог товаров */
 /* !!! Преимущества */
 .feature {
   background-color: #222;
@@ -565,7 +563,6 @@ body {
   padding-top: 16px;
 }
 
-/* !!! Преимущества */
 /* !!!Обратная связь и отзыв */
 .feedback {
   background-image: url("../img/subscribe-bg.jpg");
@@ -668,7 +665,6 @@ body {
   cursor: pointer;
 }
 
-/* !!!Обратная связь и отзыв */
 /* !!!Foter */
 .footer {
   background-color: #222;
@@ -724,5 +720,157 @@ body {
   color: #FFF;
 }
 
-/* !!!Foter */
+/* !!!Slide */
+.slide {
+  height: 777px;
+  background-color: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 65px;
+}
+
+.slide__button {
+  width: 47px;
+  height: 47px;
+  background: rgba(42, 42, 42, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+.slide__button:hover {
+  cursor: pointer;
+}
+
+.slide__button:hover .slide__butto-svg {
+  fill: #F16D7F;
+}
+
+.slide__foto {
+  height: 712px;
+}
+
+/* !!!ViewProduct */
+.viewproduct {
+  background-color: #FFF;
+  border: 1px solid #EAEAEA;
+  margin-top: -65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.viewproduct__p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-bottom: 12px;
+}
+
+.viewproduct__hr {
+  background-color: #EF5B70;
+  border: 1px solid #EF5B70;
+  width: 63px;
+  height: 3px;
+  margin-bottom: 12px;
+}
+
+.viewproduct__h2 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  margin-bottom: 48px;
+}
+
+.viewproduct__desc {
+  width: 555px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5E5E5E;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.viewproduct__price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  margin-bottom: 65px;
+}
+
+.viewproduct__hr2 {
+  width: 642px;
+  height: 1px;
+  background-color: #EAEAEA;
+  border: none;
+  margin-bottom: 65px;
+}
+
+.viewproduct__choice {
+  margin-bottom: 48px;
+}
+
+.viewproduct__button {
+  padding: 15px 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 23px;
+          column-gap: 23px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  border: 1px solid #FF6A6A;
+  background-color: #FFF;
+}
+
+.viewproduct__button:hover {
+  color: #FFF;
+  background-color: #F26376;
+  cursor: pointer;
+}
+
+.viewproduct__button:hover .viewproduct__button-img {
+  fill: #FFF;
+}
+
+.viewproduct__button-img {
+  margin-left: -33px;
+  fill: #F26376;
+}
 /*# sourceMappingURL=style.css.map */
