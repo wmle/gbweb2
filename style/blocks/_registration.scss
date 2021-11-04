@@ -1,0 +1,93 @@
+.registration {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex;
+
+    column-gap: 128px;
+}
+
+.regform {
+    &__title {
+        margin-bottom: 20px;
+        @include set_fonts(300, 16px, 19px, $color_text-grey);
+    }
+    &__radiobox {
+        margin-bottom: 33px;
+        font-weight: 300;
+        @include flex(0, 0, center);
+    }
+    &__radio {
+        &-title {
+            margin-left: 10px;
+            @include set_fonts(0, 11px, 13px, $color_text-black);
+        }
+        &-margin {
+            margin-left: 20px;
+        }
+    }
+    &__input {
+        width: 360px;
+        @include set_fonts(300, 13px, 16px, $color_reg_txt);
+        padding: 16px 17px;
+        border: 1px solid $color_reg_inbord;
+
+        &::placeholder {
+            color: $color_reg_txt;
+        }
+    }
+    &__margin {
+        margin-bottom: 20px;
+    }
+    &__margin2 {
+        margin-bottom: 31px;
+    }
+    &__margin3 {
+        margin-bottom: 15px;
+    }
+    &__dptxt {
+        margin-bottom: 39px;
+        @include set_fonts(300, 13px, 16px, $color_reg_txt);
+    }
+    &__button {
+        padding: 16px 29px;
+        background-color: #F16D7F;
+        border: none;
+        @include set_fonts(normal, 14px, 17px, $color_text-white);
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &-svg {
+            margin-left: 20px;
+            fill: #FFFFFF;
+        }
+    }
+
+}
+
+
+
+.registration__about {
+    @include set_fonts(300, 24px, 29px, $color_text-black);
+}
+
+.about {
+    &__title {
+        margin-bottom: 22px;
+    }
+    &__p {
+        margin-bottom: 21px;
+    }
+    &__list {
+        list-style: none;
+    }
+    &__item {
+        margin-bottom: 16px;
+
+        &-svg {
+            margin-right: 23px;
+        }
+    }
+
+}

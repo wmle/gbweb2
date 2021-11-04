@@ -1,0 +1,164 @@
+.basket {
+    padding-top: 96px;
+    padding-bottom: 128px;
+    @include flex(0, space-between);
+    column-gap: 128px;
+
+    &__box {
+        flex-grow: 1;
+    }
+    &__list {
+        list-style: none;
+        @include flex(0, 0, 0, wrap);
+        row-gap: 40px;
+    }
+    &__item {
+        position: relative;
+        @include set_fonts(0, 22px, 26px, $color_basket_txt);
+        box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+        display: flex;
+        flex-grow: 1;
+    }
+    &__item-box {
+        margin-top: 22px;
+        margin-left: 31px;
+        margin-right: 97px;
+    }
+    &__item-title {
+        @include set_fonts(0, 24px, 29px, $color_text-grey);
+        margin-bottom: 42px;
+    }
+    &__item-desc {
+        margin-bottom: 6px;
+    }
+    &__item-s1 {
+        color: $color_basket_items1;
+    }
+    &__item-s2 {
+        color: $color_basket_items2;
+    }
+    &__item-input {
+        @include set_fonts(0, 18px, 22px, $color_basket_input);
+        width: 44px;
+        padding: 1px 15px;
+        border: 1px solid $color_basket_inpbor;
+        margin-left: 24px;
+    }
+    &__item-button {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+        border: none;
+        background: none;
+        fill: $color_fill_btn;
+
+        &:hover {
+            fill: $color_fill_btnhov;
+            cursor: pointer;
+        }
+    }
+    &__box-button {
+        margin-top: 72px;
+        @include flex(0, space-between);
+    }
+    &__button {
+        @include set_fonts(300, 14px, 17px, $color_text-grey);
+        padding: 17px 40px;
+        border: 1px solid $color_fill_btnbord;
+        background: none;
+
+        &:hover {
+            border: 1px solid $color_btn_bg;
+            background: $color_btn_bg;
+            color: #FFF;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.basket__form-item {
+    max-width: 360px;
+}
+.basket__form-cost {
+    margin-top: 57px;
+    background-color: $bg-basket-cost;
+    padding: 40px 35px;
+    @include flex(column, 0, center);
+}
+
+.form {
+    &__item {
+
+        &-title {
+            @include set_fonts(300, 16px, 19px, $color_text-grey);
+            margin-top: 17px;
+        }
+        &-input {
+            width: 360px;
+            margin-top: 20px;
+            @include set_fonts(300, 13px, 16px, $color_text-grey);
+            padding: 13px 17px 16px 17px;
+            border: 1px solid $color_fill_btnbord;
+
+            &::placeholder {
+                color: $color_basket_input2;
+            }
+        }
+
+        &-button {
+            padding: 11px 15px;
+            @include set_fonts(300, 11px, 13px, $color_fill_btnbord);
+            background: none;
+            border: 1px solid $color_fill_btnbord;
+            margin-top: 23px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+    }
+    &__cost {
+        &-sub {
+            align-self: flex-end;
+            @include set_fonts(0, 11px, 13px, $color_fill_btnbord);
+        }
+        &-subspan {
+            padding-left: 25px;
+        }
+        &-total {
+            align-self: flex-end;
+            @include set_fonts(300, 16px, 19px, $color_text-grey);
+            margin-top: 12px;
+            margin-right: 3px;
+        }
+        &-totalspan {
+            @include set_fonts(bold, 16px, 19px, $color_btn_bg);
+            padding-left: 25px;
+        }
+        &-hr {
+            margin-top: 21px;
+            margin-bottom: 17px;
+            background-color: #E2E2E2;
+            border: none;
+            height: 1px;
+            width: 275px;
+        
+        }
+        &-submit {
+            padding: 15px 35px;
+            @include set_fonts(300, 16px, 19px, $color_block-white);
+            background-color: $color_btn_bg;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+

@@ -20,6 +20,23 @@ $pad_height : 65px; //Высота отступа
 $slide_bg : #F7F7F7;
 $slide_border : #EAEAEA; 
 
+//Registration
+$color_reg_txt : #B1B1B1;
+$color_reg_inbord : #A4A4A4;
+
+//Basket
+$color_basket_txt : #575757;
+$color_basket_items1 : #EF5B70;
+$color_basket_items2 : #6F6E6E;
+$color_basket_input : #656565;
+$color_basket_inpbor : #EAEAEA;
+$color_basket_input2 : #B1B1B1;
+$color_fill_btn : #575757;
+$color_fill_btnhov : #EF5B70;
+$color_fill_btnbord : #A4A4A4;
+$color_btn_bg : #F16D7F;
+$bg-basket-cost : #F5F3F3;
+
 
 
 @mixin set_fonts ($weight : 0, $size : 0, $height : 0, $color : 0, $align : 0) {
@@ -96,3 +113,9 @@ body {
 
 /* !!!ViewProduct */
 @import "blocks/_viewproduct.scss";
+
+/* !!!Registration */
+@import "blocks/_registration.scss";
+
+/* !!!Корзина с товарами */
+@import "blocks/_basket.scss";
