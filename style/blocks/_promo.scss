@@ -1,6 +1,10 @@
 .promo {
     background-color: #F1E4E6;
 
+    &__old {
+        background-color: #F8F3F4;
+    }
+
     &__center {
         height: 764px;
         background-image: url("../img/promo-bg.png");

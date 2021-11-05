@@ -65,3 +65,28 @@
         fill: #F26376;
     }
 }
+
+.viewproduct__choice {
+    display: flex;
+    justify-content: center;
+    column-gap: 23px;
+}
+.viewproduct__sort {
+    position: relative;
+}
+.viewproduct__sort-title {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    cursor: pointer;
+}
+::-webkit-details-marker { display: none; }
+
+.viewproduct__sort-svg {
+    margin-left: 9px;
+    fill: #6F6E6E;
+}
+.viewproduct__sort-dtl {
+    position: absolute;
+}
