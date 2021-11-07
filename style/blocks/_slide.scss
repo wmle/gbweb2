@@ -2,6 +2,7 @@
     height: $slide_height;
     background-color: $slide_bg;
     @include flex(0, space-between, center);
+    border-top: 1px solid $slide_border;
     border-bottom: 1px solid $slide_border;
     padding-bottom: $pad_height;
 
@@ -20,6 +21,6 @@
         }
     }
     &__foto {
-        height: $slide_height - $pad_height;
+        height: $slide_height - $pad_height - 1;
     }
 }
