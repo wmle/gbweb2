@@ -39,29 +39,30 @@
 
 }
 
-/* !!! --catalog.html */
-.catnav__list {
-    list-style: none;
-    display: flex;
-    column-gap: 6px;
-}
-.catnav__item::before {
-    content: "/";
-    margin-right: 6px;
-    color: #636363;
-}
-.catnav__item:first-child::before {
-    display: none;
-}
-.catnav__link { 
-    @include set_fonts(300, 14px, 17px, #636363);
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.catnav__link--last {
-    @include set_fonts(bold, 0, 0, $color_pink);
-}
-.catnav__link[href]:hover {
-    text-decoration: underline;
-    color: $color_pink;
+.catnav {
+    &__list {
+        list-style: none;
+        display: flex;
+        column-gap: 6px;
+    }
+    &__item::before {
+        content: "/";
+        margin-right: 6px;
+        color: $color_text-next3;
+    }
+    &__item:first-child::before {
+        display: none;
+    }
+    &__link { 
+        @include set_fonts(300, 14px, 17px, $color_text-next3);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    &__link--last {
+        @include set_fonts(bold, 0, 0, $color_pink);
+    }
+    &__link[href]:hover {
+        text-decoration: underline;
+        color: $color_pink;
+    }
 }

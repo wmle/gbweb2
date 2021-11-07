@@ -12,8 +12,8 @@
     }
 
     &__hr {
-        background-color: #EF5B70;
-        border: 1px solid #EF5B70;
+        background-color: $color_pink2;
+        border: 1px solid $color_pink2;
         width: 63px;
         height: 3px;
         margin-bottom: 12px;
@@ -28,7 +28,7 @@
         margin-bottom: 32px;
     }
     &__price {
-        @include set_fonts(300, 24px, 29px, #EF5B70);
+        @include set_fonts(300, 24px, 29px, $color_pink2);
         margin-bottom: 65px;
     }
     &__hr2 {
@@ -47,46 +47,44 @@
         justify-content: center;
         align-items: center;
         column-gap: 23px;
-        @include set_fonts(normal, 16px, 19px, #F26376);
+        @include set_fonts(normal, 16px, 19px, $color_text-next2);
         border: 1px solid #FF6A6A;
         background-color: #FFF;
 
         &:hover {
-            color: #FFF;
-            background-color: #F26376;
+            color: $color_text-white;
+            background-color: $color_text-next2;
             cursor: pointer;
         }
         &:hover  &-img {
-            fill: #FFF;
+            fill: $color_block-white;
         }
     }
     &__button-img {
         margin-left: -33px;
-        fill: #F26376;
+        fill: $color_text-next2;
     }
-}
 
-.viewproduct__choice {
-    display: flex;
-    justify-content: center;
-    column-gap: 23px;
-}
-.viewproduct__sort {
-    position: relative;
-}
-.viewproduct__sort-title {
-    display: block;
-    font-size: 14px;
-    line-height: 17px;
-    color: #6F6E6E;
-    cursor: pointer;
-}
-::-webkit-details-marker { display: none; }
-
-.viewproduct__sort-svg {
-    margin-left: 9px;
-    fill: #6F6E6E;
-}
-.viewproduct__sort-dtl {
-    position: absolute;
+    &__choice {
+        display: flex;
+        justify-content: center;
+        column-gap: 23px;
+    }
+    &__sort {
+        position: relative;
+    }
+    &__sort-title {
+        display: block;
+        @include set_fonts(0, 14px, 17px, $color_text-next);
+        cursor: pointer;
+    }
+    &__sort-title::-webkit-details-marker { display: none; }
+    
+    &__sort-svg {
+        margin-left: 9px;
+        fill: $color_text-next;
+    }
+    &__sort-dtl {
+        position: absolute;
+    }
 }

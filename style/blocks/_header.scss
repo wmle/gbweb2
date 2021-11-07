@@ -1,11 +1,9 @@
 .header {
-    background-color: #222222;
-    color: #fff;
+    background-color: $color_grey;
+    color: $color_text-white;
 
     &__center {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+        @include flex(0, space-between, flex-end);
         margin-top: 18px;
         margin-bottom: 19px;
     }
@@ -38,8 +36,7 @@
 }
 
 .nav__list {
-    display: flex;
-    align-items: flex-end;
+    @include flex(0, 0, flex-end);
     column-gap: 30px;
     list-style: none;
     position: relative;

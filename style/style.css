@@ -44,8 +44,8 @@ body {
 
 /* !!! Шапка */
 .header {
-  background-color: #222222;
-  color: #fff;
+  background-color: #222;
+  color: #FFF;
 }
 
 .header__center {
@@ -262,7 +262,6 @@ body {
   color: #F16D7F;
 }
 
-/* !!! --catalog.html */
 .catnav__list {
   list-style: none;
   display: -webkit-box;
@@ -599,11 +598,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
   margin-top: 39px;
 }
 
@@ -616,22 +615,22 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  color: #000000;
+  color: #000;
   display: block;
   cursor: pointer;
   padding-left: 16px;
   padding-top: 13px;
-  background-color: #fff;
+  background-color: #FFF;
   z-index: 20;
   position: relative;
 }
 
-::-webkit-details-marker {
+.filter__main-title::-webkit-details-marker {
   display: none;
 }
 
 .filter__main-svg {
-  fill: #000000;
+  fill: #000;
   margin-left: 11px;
 }
 
@@ -652,7 +651,7 @@ body {
   width: 360px;
   position: absolute;
   padding: 16px 17px 16px 17px;
-  background-color: #fff;
+  background-color: #FFF;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   z-index: 10;
@@ -662,14 +661,14 @@ body {
   display: block;
   font-size: 14px;
   line-height: 17px;
+  color: #EF5B70;
   padding: 8px 11px 11px 11px;
   border-bottom: 1px solid #EBEBEB;
   border-left: 5px solid #EF5B70;
   cursor: pointer;
-  color: #EF5B70;
 }
 
-::-webkit-details-marker {
+.filter__next-title::-webkit-details-marker {
   display: none;
 }
 
@@ -689,7 +688,7 @@ body {
   margin-bottom: 0px;
 }
 
-.fiter__next-ilink {
+.filter__next-ilink {
   text-decoration: none;
   color: #6F6E6E;
 }
@@ -717,7 +716,7 @@ body {
   cursor: pointer;
 }
 
-::-webkit-details-marker {
+.sort__title::-webkit-details-marker {
   display: none;
 }
 
@@ -729,7 +728,7 @@ body {
 .sort__box {
   position: absolute;
   left: -10px;
-  background-color: #fff;
+  background-color: #FFF;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   margin-top: 5px;
@@ -740,7 +739,7 @@ body {
 .sort__box-label {
   display: block;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 17px;
   color: #6F6E6E;
   margin-bottom: 7px;
 }
@@ -1142,7 +1141,7 @@ body {
   cursor: pointer;
 }
 
-::-webkit-details-marker {
+.viewproduct__sort-title::-webkit-details-marker {
   display: none;
 }
 
@@ -1286,6 +1285,7 @@ body {
 
 .about__item-svg {
   margin-right: 23px;
+  fill: #000;
 }
 
 /* !!!Корзина с товарами */

@@ -15,7 +15,7 @@
     &__item {
         position: relative;
         @include set_fonts(0, 22px, 26px, $color_basket_txt);
-        box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+        box-shadow: $shadow2;
         display: flex;
         flex-grow: 1;
     }
@@ -70,7 +70,7 @@
         &:hover {
             border: 1px solid $color_btn_bg;
             background: $color_btn_bg;
-            color: #FFF;
+            color: $color_text-white;
             cursor: pointer;
         }
     }

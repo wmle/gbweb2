@@ -23,10 +23,10 @@
     height: 40px;
 }
 .fitem-h3 {
-    @include set_fonts(0, 19px, 24px, #FBFBFB);
+    @include set_fonts(0, 19px, 24px, $color_text-next4);
     padding-top: 19px;
 }
 .fitem-text {
-    @include set_fonts(300, 14px, 17px, #FBFBFB);
+    @include set_fonts(300, 14px, 17px, $color_text-next4);
     padding-top: 16px;
 }
