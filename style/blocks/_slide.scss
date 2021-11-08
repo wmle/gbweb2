@@ -12,15 +12,26 @@
         background: rgba(42, 42, 42, 0.15);
         @include flex(0, center, center);
         border: none;
+        transition: 0.3s;
 
         &:hover {
             cursor: pointer;
+            background: none;
+            outline: 1px solid $color_pink;
+            border-radius: 25px;
             .slide__butto-svg {
                 fill: $color_pink;
             }
         }
+        &-left:hover {
+            transform: translateX(10px);
+        }
+        &-right:hover {
+            transform: translateX(-10px);
+        }
     }
-    &__foto {
+    &__img {
         height: $slide_height - $pad_height - 1;
+        // height: 100%;
     }
 }

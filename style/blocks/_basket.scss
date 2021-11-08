@@ -51,10 +51,12 @@
         border: none;
         background: none;
         fill: $color_fill_btn;
+        transition: 0.3s;
 
         &:hover {
             fill: $color_fill_btnhov;
             cursor: pointer;
+            transform: scale(1.15);
         }
     }
     &__box-button {
@@ -66,6 +68,7 @@
         padding: 17px 40px;
         border: 1px solid $color_fill_btnbord;
         background: none;
+        transition: 0.3s;
 
         &:hover {
             border: 1px solid $color_btn_bg;
@@ -112,9 +115,12 @@
             background: none;
             border: 1px solid $color_fill_btnbord;
             margin-top: 23px;
+            transition: 0.3s;
 
             &:hover {
                 cursor: pointer;
+                background-color: $color_fill_btn;
+                color: $color_text-white;
             }
         }
 
@@ -151,9 +157,11 @@
             @include set_fonts(300, 16px, 19px, $color_block-white);
             background-color: $color_btn_bg;
             border: none;
+            transition: 0.3s;
 
             &:hover {
                 cursor: pointer;
+                transform: scale(1.1);
             }
         }
     }

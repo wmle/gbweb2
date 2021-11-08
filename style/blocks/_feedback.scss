@@ -63,5 +63,11 @@
         border: none;
         border-radius: 0 25px 25px 0;
         cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            // background-color: $color_text-next;
+            transform: scale(1.15);
+        }
     }
 }

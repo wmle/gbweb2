@@ -53,11 +53,24 @@
         background-color: #F16D7F;
         border: none;
         @include set_fonts(normal, 14px, 17px, $color_text-white);
+        transition: 0.3s;
 
         &:hover {
             cursor: pointer;
+            transform: scale(1.1);
         }
 
+        &:hover &-svg {
+            animation: rotate-btnsvg 0.6s;
+            @keyframes rotate-btnsvg {
+                0% {
+                    transform: rotate(0);
+                }                
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        }
         &-svg {
             margin-left: 20px;
             fill: #FFFFFF;

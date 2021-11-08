@@ -90,12 +90,12 @@
         text-decoration: none;
         display: inline-block;
 
-        transition: background-color, color;
-        transition-duration: 0.3s, 0.5s;
+        transition: 0.3s;
     }
     &__button:hover {
         background-color: $color_text-next2;
         color: $color_text-white;
+        transform: scale(1.1);
     }
     &__video {
         object-fit: cover;
@@ -175,6 +175,12 @@
         position: relative;
     }
     &__main-title::-webkit-details-marker { display: none; }
+    &__main-title:hover {
+        color: $color_pink2;
+    }
+    &__main-title:hover &__main-svg {
+        fill: $color_pink2;
+    }
 
     &__main-svg {
         fill: $color_block-black;
@@ -242,6 +248,12 @@
         cursor: pointer;
     }
     &__title::-webkit-details-marker { display: none; }
+    &__title:hover {
+        color: $color_pink2;
+    }
+    &__title:hover &__svg {
+        fill: $color_pink2;
+    }
     
     &__svg {
         fill: $color_text-next;

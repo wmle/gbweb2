@@ -75,9 +75,12 @@
     }
     &__menu-close:hover  &__menu-close--svg{
         fill: $color_text-next2;
+        transform: scale(1.2);
+        transition: 0.3s;
     }
     &__menu-close--svg {
         fill: $color_text-next;
+        transition: 0.3s;
     }
     &__menu-title {
         @include set_fonts(bold, 14px, 17px, $color_text-black);
@@ -95,6 +98,9 @@
         @include set_fonts(0, 14px, 17px, #F16D7F);
         text-decoration: none;
     }
+    &__menu-link:hover {
+        color: $color_text-next;
+    }
     &__submenu-list {
         list-style: none;
         margin-left: 20px;
@@ -109,6 +115,9 @@
     &__submenu-link {
         @include set_fonts(0, 14px, 17px, $color_text-next);
         text-decoration: none;
+    }
+    &__submenu-link:hover {
+        color: $color_text-next2;;
     }
 }
 

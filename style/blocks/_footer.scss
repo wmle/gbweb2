@@ -28,4 +28,28 @@
 .social__link:hover {
     background-color: $color_pink;
     color: $color_text-white;
+    -webkit-animation: social__rotate-center 0.6s ease-in-out both;
+	        animation: social__rotate-center 0.6s ease-in-out both;
 }
+
+
+@-webkit-keyframes social__rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes social__rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }

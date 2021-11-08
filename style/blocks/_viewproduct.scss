@@ -34,7 +34,7 @@
     &__hr2 {
         width: 642px;
         height: 1px;
-        background-color: #EAEAEA;
+        background-color: $slide_border;
         border: none;
         margin-bottom: 65px;
     }
@@ -49,12 +49,14 @@
         column-gap: 23px;
         @include set_fonts(normal, 16px, 19px, $color_text-next2);
         border: 1px solid #FF6A6A;
-        background-color: #FFF;
+        background-color: $color_block-white;
+        transition: 0.3s;
 
         &:hover {
             color: $color_text-white;
             background-color: $color_text-next2;
             cursor: pointer;
+            transform: scale(0.9);
         }
         &:hover  &-img {
             fill: $color_block-white;
@@ -79,7 +81,12 @@
         cursor: pointer;
     }
     &__sort-title::-webkit-details-marker { display: none; }
-    
+    &__sort-title:hover {
+        color: $color_pink2;
+    }
+    &__sort-title:hover &__sort-svg {
+        fill: $color_pink2;
+    }
     &__sort-svg {
         margin-left: 9px;
         fill: $color_text-next;
