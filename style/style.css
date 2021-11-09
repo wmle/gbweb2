@@ -133,6 +133,8 @@ body {
   background-color: #FFF;
   padding: 37px 34px;
   color: #000;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .main__menu-box {
