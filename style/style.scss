@@ -1,4 +1,15 @@
 $width_content : 1140px;
+$width_content2 : 736px;
+
+$width_padding_1: 15px;
+$width_padding_2 : 8px;
+$width_x2_1 : $width_padding_1 * 2;
+$width_x2_2 : $width_padding_2 * 2;
+$width_desc : $width_content + $width_x2_1;
+$width_plan : $width_content2 + $width_x2_2;
+
+
+
 $global_fonts : 'Lato', sans-serif;
 
 $color_pink : #F16D7F; //Розовый цвет
@@ -83,6 +94,9 @@ body {
 .center {
     max-width: $width_content;
     margin: 0 auto;
+    padding-left: 15px; //Адаптив
+    padding-right: 15px; //Адаптив
+    box-sizing: content-box;
 }
 .main {
     flex-grow: 1;

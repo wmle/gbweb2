@@ -3,7 +3,8 @@
     color: $color_text-black;
 
     &__center {
-        padding: 24px 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -14,6 +15,15 @@
     &__social {
         display: flex;
         gap: 7px;
+    }
+
+    @media (max-width: $width_plan) {
+      &__center {
+        padding-top: 43px;
+        padding-bottom: 10px;
+        gap: 40px;
+        flex-direction: column-reverse;
+      }
     }
 }
 

@@ -16,6 +16,7 @@
         @include set_fonts(900, 48px, 40px, $color_text-grey);
         border-left: 12px solid $color_pink;
         padding-left: 16px;
+        padding-top: 10px;
         margin-right: 100px;
         margin-top: 290px;
     }
@@ -28,16 +29,59 @@
     /* !!! --catalog.html */
     &__center--cat {
         height: 148px;
-        padding: 60px 0;
         background-image: none;
         justify-content: space-between;
+        flex-direction: row;
         align-items: center;
     }
     &__title--cat {
         @include set_fonts(normal, 24px, 29px, $color_pink);
     }
 
+    
+    @media (max-width : $width_desc) {
+        &__center {
+            height: 365px;
+            background-position-x: 0;
+            background-size: contain;
+            align-items: center;
+        }
+        &__title {
+            margin: 0;
+            margin-right: 16px;
+        }
+        &__center--cat {
+            height: 148px;
+        }
+    }
+    
+    @media (max-width: $width_plan) {
+        &__center--cat {
+            height: 148px;
+            flex-direction: column;
+            gap: 32px;
+        }
+        &__center {
+            // height: 363px;
+            background-image: none;
+            justify-content: center;
+        }
+        &__title {
+            padding-top: 5px;
+            @include set_fonts(900, 38px, 24px, $color_text-grey);
+        }
+        &__title--small {
+            @include set_fonts(bold, 20px, 24px, 0);
+        }
+        &__title--cat {
+            @include set_fonts(normal, 20px, 24px, $color_pink);
+        }
+    }
+
 }
+
+
+
 
 .catnav {
     &__list {

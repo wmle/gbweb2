@@ -4,6 +4,25 @@
     display: flex;
 
     column-gap: 128px;
+
+    &__about {
+        @include set_fonts(300, 24px, 29px, $color_text-black);
+    }
+
+    @media (max-width : $width_desc) {
+        padding-top: 40px;
+        column-gap: 22px;
+
+        &__about {
+            @include set_fonts(300, 16px, 19px, $color_text-black);
+        }
+    }
+    @media (max-width : $width_plan) {
+        width: 360px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
 }
 
 .regform {
@@ -80,11 +99,6 @@
 }
 
 
-
-.registration__about {
-    @include set_fonts(300, 24px, 29px, $color_text-black);
-}
-
 .about {
     &__title {
         margin-bottom: 22px;
@@ -101,6 +115,12 @@
         &-svg {
             margin-right: 23px;
             fill: #000;
+        }
+    }
+
+    @media (max-width : $width_desc) {
+        &__item { 
+            margin-bottom: 23px;
         }
     }
 

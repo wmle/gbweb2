@@ -94,4 +94,25 @@
     &__sort-dtl {
         position: absolute;
     }
+
+    @media (max-width : $width_desc) {
+        margin-top: 0;
+    }
+    @media (max-width : $width_plan) {
+        &__h2 {
+            margin-bottom: 32px;
+        }
+        &__desc {
+            width: 326px;
+        }
+        &__price {
+            margin-bottom: 32px;
+        }
+        &__hr2 {
+            width: 175px;
+        }
+        &__sort-title {
+            @include set_fonts(0, 10px, 12px, $color_text-next);
+        }
+    }
 }

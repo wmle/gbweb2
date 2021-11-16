@@ -34,4 +34,26 @@
         height: $slide_height - $pad_height - 1;
         // height: 100%;
     }
+
+    @media (max-width : $width_desc) {
+        padding-bottom: 0;
+    }
+    @media (max-width : $width_plan) {
+        height: 454px;
+
+        &__img {
+            height: 100%;
+            width: 374px;
+        }
+
+        &__button {
+            position: absolute;
+        }
+        &__button-left {
+            left: 0;
+        }
+        &__button-right {
+            right: 0;
+        }
+    }
 }

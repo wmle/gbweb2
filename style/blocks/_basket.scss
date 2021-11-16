@@ -77,6 +77,63 @@
             cursor: pointer;
         }
     }
+
+    @media (max-width: $width_desc) {
+        padding-top: 59px;
+        padding-bottom: 128px;
+        flex-wrap: wrap;
+
+        &__box-button {
+            margin-top: 62px;
+            justify-content: center;
+            gap: 48px;
+        }
+    }
+    @media (max-width: $width_plan) {
+        padding-top: 39px;
+        padding-bottom: 96px;
+
+        &__box-button {
+            margin-top: 30px;
+            gap: 9px;
+        }
+        &__list {
+            row-gap: 32px;
+        }
+        &__item-img {
+            width: 143px;
+            height: 188px;
+        }
+        &__item-box {
+            margin-top: 13px;
+            margin-left: 17px;
+            margin-right: 53px;
+        }
+        &__item {
+            @include set_fonts(0, 14px, 17px, $color_basket_txt);
+        }
+        &__item-title {
+            @include set_fonts(0, 16px, 19px, $color_text-grey);
+            margin-bottom: 28px;
+        }
+        &__item-input {
+            @include set_fonts(0, 10px, 12px, $color_basket_input);
+            width: 26px;
+            padding: 1px 9px;
+        }
+        &__item-button {
+            top: 17px;
+            right: 12px;
+        }
+        &__item-button--svg {
+            width: 10px;
+            height: 10px;
+        }
+        &__button {
+            @include set_fonts(300, 12px, 14px, $color_text-grey);
+            padding: 9px 18px;
+        }
+    }
 }
 
 
@@ -88,6 +145,30 @@
     background-color: $bg-basket-cost;
     padding: 40px 35px;
     @include flex(column, 0, center);
+}
+
+@media (max-width: $width_desc) {
+    .basket__form {
+        padding-top: 64px;
+        display: flex;
+        gap: 15px;
+        margin: 0 auto;
+    }
+    .basket__form-cost {
+        margin-bottom: 28px;
+    }
+}
+@media (max-width: $width_plan) {
+    .basket__form {
+        padding-top: 48px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 48px;
+    }
+    .basket__form-cost {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 .form {
@@ -111,7 +192,7 @@
 
         &-button {
             padding: 11px 15px;
-            @include set_fonts(300, 11px, 13px, $color_fill_btnbord);
+            @include set_fonts(300, 11px, 13px, $color_basket_txt);
             background: none;
             border: 1px solid $color_fill_btnbord;
             margin-top: 23px;
@@ -165,6 +246,14 @@
             }
         }
     }
+
+    @media (max-width: $width_desc) {
+
+    }
+    @media (max-width: $width_plan) {
+
+    }
+
 }
 
 

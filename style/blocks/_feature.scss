@@ -4,7 +4,7 @@
     padding: 105px 0;
 
     &__flex {
-        @include flex(0, center, 0, wrap);
+        @include flex(0, center, 0, 0);
         column-gap: 30px;
         row-gap: 48px;
     }
@@ -16,6 +16,21 @@
             transform: scale(1.15);           
         }
     }
+
+    @media (max-width: $width_desc) { 
+        padding-top: 48px;
+        padding-bottom: 64px;
+
+        &__flex {
+            flex-direction: column;
+            align-items: center;
+        }
+     }
+
+     @media (max-width: $width_plan) { 
+        padding-top: 48px;
+        padding-bottom: 81px;
+     }
     
 }
 

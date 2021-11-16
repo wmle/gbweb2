@@ -7,7 +7,8 @@
 
     &__item {
         background: #C4C4C4;
-        width: 360px;
+        // width: 360px;
+        width: 31.5%;
         height: 260px;
         text-align: center;
         @include flex(column, center);
@@ -36,16 +37,56 @@
         background-image: url("../img/cat-4.jpg");
         background-repeat: no-repeat; /* Линия в конце появляется */
         background-position: center; /* Линия в конце появляется */
-    }
-    &__item:nth-child(1) {
-        background-image: url("../img/cat-1.jpg");
+        background-size: cover;
     }
     &__item:nth-child(2) {
-        background-image: url("../img/cat-2.jpg");
+        background-image: url("../img/cat-1.jpg");
+        background-size: cover;
     }
     &__item:nth-child(3) {
-        background-image: url("../img/cat-3.jpg");
+        background-image: url("../img/cat-2.jpg");
+        background-size: cover;
     }
+    &__item:nth-child(4) {
+        background-image: url("../img/cat-3.jpg");
+        background-size: cover;
+    }
+
+
+
+    @media (max-width: $width_desc) {
+        gap: 19px;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 155px;
+        
+        &__item {
+            width: 31.5%;
+            height: 168px;
+        }
+
+        &__item:last-child {
+            height: 116px;
+        }
+    }
+
+    @media (max-width: $width_plan) {
+        gap: 32px;
+        justify-content: center;
+        padding-top: 64px;
+        padding-bottom: 64px;
+
+        &__item {
+            width: 343px;
+            height: 247px;
+        }
+
+        &__item:last-child {
+            width: 343px;
+            height: 111px;
+        }
+    }
+
     
 }
 
