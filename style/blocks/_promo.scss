@@ -19,7 +19,24 @@
         padding-top: 10px;
         margin-right: 100px;
         margin-top: 290px;
+
+        -webkit-animation: slideh1 0.8s both;
+	    animation: slideh1 0.8s both;
+
+          @keyframes slideh1 {
+            0% {
+                -webkit-transform: translateX(200px);
+                        transform: translateX(200px);
+              }
+              100% {
+                -webkit-transform: translateX(0px);
+                        transform: translateX(0px);
+              }
+          }
+
     }
+
+
     &__title--small {
         @include set_fonts(bold, 32px, 38px, 0);
     }
@@ -36,6 +53,20 @@
     }
     &__title--cat {
         @include set_fonts(normal, 24px, 29px, $color_pink);
+
+        -webkit-animation: slideh1-cat 0.8s;
+	    animation: slideh1-cat 0.8s;
+
+          @keyframes slideh1-cat {
+            0% {
+                -webkit-transform: translateX(350px);
+                transform: translateX(350px);
+              }
+              100% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+              }
+          }
     }
 
     

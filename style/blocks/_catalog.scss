@@ -50,9 +50,12 @@
             @include set_fonts(0, 14px, 17px, $color_text-white);
             background: none;
             border: 1px solid #FFF;
+            transition: 0.3s;
         }
         &-button:hover {
             cursor: pointer;
+            transform: scale(1.15);
+            background-color: #666;
         }
         &-img {
             margin-right: 11px;
@@ -64,8 +67,15 @@
         // display: flex;
         opacity: 1;
     }
-    &__name {
+    
+    &__link {
         @include set_fonts(0, 13px, 16px, $color_text-black);
+        text-decoration: none;
+        &:hover {
+            color: #F16D7F;
+        }
+    }
+    &__name {
         margin-top: 24px;
         padding-left: 18px;
     }
@@ -165,11 +175,13 @@
         @include set_fonts(300, 16px, 19px, $color_pt-list);
         text-decoration: none;
     }
-    &__item-link:not([href]) {
-        color: $color_pink2;
-    }
     &__item-link:hover {
         color: $color_pink2;
+        text-decoration: underline;
+    }
+    &__item-link:not([href]) {
+        color: $color_pink2;
+        text-decoration: none;
     }
     &__item-last::before {
         content: ".....";
