@@ -107,6 +107,19 @@
         &__title--cat {
             @include set_fonts(normal, 20px, 24px, $color_pink);
         }
+
+        @keyframes slideh1 {
+            0% {
+                -webkit-transform: translateX(50px);
+                        transform: translateX(50px);
+              }
+          }
+          @keyframes slideh1-cat {
+            0% {
+                -webkit-transform: translateX(50px);
+                transform: translateX(50px);
+              }
+          }
     }
 
 }

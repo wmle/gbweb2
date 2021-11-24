@@ -423,6 +423,30 @@ body {
     line-height: 24px;
     color: #F16D7F;
   }
+  @-webkit-keyframes slideh1 {
+    0% {
+      -webkit-transform: translateX(50px);
+      transform: translateX(50px);
+    }
+  }
+  @keyframes slideh1 {
+    0% {
+      -webkit-transform: translateX(50px);
+      transform: translateX(50px);
+    }
+  }
+  @-webkit-keyframes slideh1-cat {
+    0% {
+      -webkit-transform: translateX(50px);
+      transform: translateX(50px);
+    }
+  }
+  @keyframes slideh1-cat {
+    0% {
+      -webkit-transform: translateX(50px);
+      transform: translateX(50px);
+    }
+  }
 }
 
 .catnav__list {
