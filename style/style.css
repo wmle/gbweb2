@@ -1232,6 +1232,9 @@ body {
   .feedback__center {
     padding: 0;
   }
+  .feedback__review {
+    width: 100%;
+  }
 }
 
 .review__img {
@@ -1296,6 +1299,12 @@ body {
 .form__button:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
+}
+
+@media (max-width: 752px) {
+  .form__email {
+    width: 220px;
+  }
 }
 
 /* !!!Foter */

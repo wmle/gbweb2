@@ -47,9 +47,11 @@
         &__form { 
             margin-top: 75px;
         }
-
         &__center {
             padding: 0;
+        }
+        &__review {
+            width: 100%;
         }
     }
 
@@ -94,6 +96,12 @@
         &:hover {
             // background-color: $color_text-next;
             transform: scale(1.15);
+        }
+    }
+
+    @media (max-width: $width_plan) {
+        &__email {
+            width: 220px;
         }
     }
 }
