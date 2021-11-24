@@ -70,6 +70,8 @@
         color: $color_text-black;
         box-shadow: $shadow;
 
+        z-index: 50;
+
         -webkit-animation: left-menu 0.8s;
         animation: left-menu 0.8s;
 
@@ -83,6 +85,17 @@
                 transform: translateX(0px);
             }
           }
+        
+          @media (max-width: $width_plan) { 
+            @keyframes left-menu {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+         }
     }
     &__menu-box {
         position: relative;

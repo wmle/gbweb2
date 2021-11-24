@@ -146,6 +146,7 @@ body {
   color: #000;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 50;
   -webkit-animation: left-menu 0.8s;
   animation: left-menu 0.8s;
 }
@@ -169,6 +170,25 @@ body {
   100% {
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
+  }
+}
+
+@media (max-width: 752px) {
+  @-webkit-keyframes left-menu {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes left-menu {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 
