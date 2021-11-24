@@ -1472,7 +1472,7 @@ body {
   }
   .slide__img {
     height: 100%;
-    width: 374px;
+    width: 100%;
   }
   .slide__button {
     position: absolute;
