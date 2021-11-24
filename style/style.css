@@ -991,6 +991,12 @@ body {
   }
 }
 
+@media (max-width: 752px) {
+  .filter__list {
+    width: 330px;
+  }
+}
+
 @media (max-width: 1170px) {
   .hidden__plan {
     display: none;

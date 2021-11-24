@@ -306,7 +306,11 @@
         }
     }
 
-
+    @media (max-width: $width_plan) {
+        &__list {
+            width: 330px;
+        }
+    }
 }
 @media (max-width: $width_desc) {
     .hidden__plan {
