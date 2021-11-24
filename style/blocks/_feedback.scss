@@ -46,7 +46,11 @@
         padding-bottom: 110px;
         &__form { 
             margin-top: 75px;
-         }
+        }
+
+        &__center {
+            padding: 0;
+        }
     }
 
 }

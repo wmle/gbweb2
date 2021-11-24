@@ -1229,6 +1229,9 @@ body {
   .feedback__form {
     margin-top: 75px;
   }
+  .feedback__center {
+    padding: 0;
+  }
 }
 
 .review__img {
