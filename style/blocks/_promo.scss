@@ -110,14 +110,14 @@
 
         @keyframes slideh1 {
             0% {
-                -webkit-transform: translateX(50px);
-                        transform: translateX(50px);
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
               }
           }
           @keyframes slideh1-cat {
             0% {
-                -webkit-transform: translateX(50px);
-                transform: translateX(50px);
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
               }
           }
     }
